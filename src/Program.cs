@@ -4,8 +4,8 @@ using System.Security.Principal;
 
 namespace ELess {
   internal sealed class Program {
-    internal static String StrMsg(String msg, String  par = null) {
-      return String.Format(CultureInfo.InvariantCulture, msg, par);
+    internal static String StrMsg(String msg, params Object[] list) {
+      return String.Format(CultureInfo.InvariantCulture, msg, list);
     }
 
     static void Main() {
